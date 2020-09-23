@@ -30,7 +30,7 @@
         grid-row: em(40px);
         @include media-breakpoint-up(md) {
             grid-template-columns: repeat(3,1fr);
-            column-gap: em(70px);
+            column-gap: em(50px);
         }
     }
     &__title{

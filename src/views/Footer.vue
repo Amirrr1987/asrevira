@@ -13,8 +13,40 @@
             <a href="" class="social__link"><img src="@/assets/img/social/facebook.png"  alt="" class="social__item social--facebook"></a>
           </div>
         </div>
+        <div class="footer__about-us">
+          <h4 class="about-us__title">ارتباط با ما</h4>
+          <p class="">
+           <span class="">تلفن شرکت : </span> 
+           <span class="">0218421844</span>
+          </p>
+          <p class="">
+           <span class="">تلفن شرکت : </span> 
+           <span class="">0218421844</span>
+          </p>
+          <p class="">
+           <span class="">تلفن شرکت : </span> 
+           <span class="">0218421844</span>
+          </p>
+          <p class="">
+           <span class="">تلفن شرکت : </span> 
+           <span class="">0218421844</span>
+          </p>
+        </div>
+        <div class="footer__useful-links useful-links">
+          <h4 class="useful-links__title">لینک های مفید</h4>
+          <ul class="useful-links__items">
+            <li class="useful-links__item"><a href="" class="useful-links__link">asd</a></li>
+            <li class="useful-links__item"><a href="" class="useful-links__link">asd</a></li>
+            <li class="useful-links__item"><a href="" class="useful-links__link">asd</a></li>
+            <li class="useful-links__item"><a href="" class="useful-links__link">asd</a></li>
+            <li class="useful-links__item"><a href="" class="useful-links__link">asd</a></li>
+          </ul>
+        </div>
       </div>
     </div>
+    <p class="footer__copyright">
+      کلیه حوقسیب سیرصسربصثبزصثبز ثصقرثقرثر ثیبرثبرثقلر
+    </p>
   </footer>
 </template>
 

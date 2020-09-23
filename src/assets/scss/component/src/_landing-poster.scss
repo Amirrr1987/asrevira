@@ -1,0 +1,142 @@
+
+
+// .landing-poster {
+//     &__body {
+//         @extend .p-3;
+//         @extend .shadow;
+//     }
+
+//     &__caption {
+//         @extend .text-justify;
+//     }
+
+//     &__container {
+//         @extend .container;
+//     }
+
+//     &__date {
+//         background-color: #2D418E;
+//         width: em(150px);
+//         height: em(35px);
+//         @extend .text-light;
+//         @extend .d-flex;
+//         @extend .justify-content-center;
+//         @extend .align-items-center;
+//         z-index: 0;
+//         @extend .position-relative;
+//         &::before{
+//             content: "";
+//             @extend .position-absolute;
+//             height: inherit;
+//             width: em(40px);
+//             background-color: inherit;
+//             right: -8px;
+//             transform: skew(-20deg, 0deg);
+//             z-index: -1;
+//         }
+//     }
+
+//     &__day {}
+
+//     &__details {
+//         @extend .d-flex;
+//         @extend .justify-content-between;
+//         @extend .align-items-center;
+//     }
+
+//     &__img {
+//         @extend .img-fluid;
+//     }
+
+//     &__item {
+//         @extend .bg-white;
+//         overflow: hidden;
+//         border-radius: em(20px);
+
+//     }
+
+//     &__month {}
+
+//     &__more {
+//         background-color: #15D6F3;
+//         @extend .btn;
+//         border-radius: 20px;
+//         @extend .text-light;
+//         @extend .pr-4;
+//         @extend .pl-4;
+//     }
+
+//     &__row {
+//         @extend .d-grid;
+//         row-gap: em(30px);
+        
+//     }
+
+//     &__title {}
+
+//     &__year {}
+// }
+
+
+
+.landing-poster {
+    &__body {
+        @extend .d-grid;
+        @extend .p-3;
+        grid-template-columns: 120px 1fr 120px;
+        grid-template-rows: min-content 1fr min-content;
+        grid-template-areas: 
+        'title title date'
+        'zate zate zate'
+        'null null more';
+    }
+
+    &__caption {
+        grid-area: zate;
+        @extend .text-justify;
+    }
+
+    &__container {
+        @extend .container;
+    }
+
+    &__date {
+        grid-area: date;
+    }
+
+    &__day {}
+
+    &__img {
+        @extend .img-fluid;
+    }
+
+    &__item {
+        @extend .bg-white;
+        overflow: hidden;
+        border-radius: em(20px);
+        @extend .shadow;
+     }
+
+    &__month {}
+
+    &__more {
+        grid-area: more;
+        background-color: #15D6F3;
+        @extend .btn;
+        border-radius: 20px;
+        @extend .text-light;
+        @extend .pr-4;
+        @extend .pl-4;
+    }
+
+    &__row {
+        @extend .d-grid;
+        row-gap: em(30px);
+    }
+
+    &__title {
+        grid-area: title;
+    }
+
+    &__year {}
+}

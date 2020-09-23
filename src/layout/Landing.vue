@@ -4,6 +4,7 @@
       <LandingNews/>
       <LandingServices/>
       <LandingTraining/>
+      <LandingPoster/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import LandingInfo     from '@/components/LandingInfo';
 import LandingNews     from '@/components/LandingNews';
 import LandingServices from '@/components/LandingServices';
 import LandingTraining from '@/components/LandingTraining';
+import LandingPoster   from '@/components/LandingPoster';
 export default {
     name: 'Landing',
     components:{
@@ -19,6 +21,7 @@ export default {
       LandingNews,
       LandingServices,
       LandingTraining,
+      LandingPoster,
 
     }
 }

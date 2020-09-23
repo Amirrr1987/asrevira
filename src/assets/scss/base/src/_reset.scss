@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    direction: rtl;
+}
+body{
+    text-align: right !important;
+    font-family: 'primary' !important;
+}

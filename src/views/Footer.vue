@@ -3,33 +3,29 @@
     <div class="footer__container">
       <div class="footer__row">
         <div class="footer__social social">
-          <h4 class="socail__title">شبکه های اجتماعی</h4>
+          <h4 class="social__title">شبکه های اجتماعی</h4>
           <div class="social__items">
-            <a href="" class="social__link"><img src="@/assets/img/social/instagram.png" alt="" class="social__item social--instagram"></a>
-            <a href="" class="social__link"><img src="@/assets/img/social/telegram.png"  alt="" class="social__item social--telegram"></a>
-            <a href="" class="social__link"><img src="@/assets/img/social/twitter.png"   alt="" class="social__item social--twitter"></a>
-            <a href="" class="social__link"><img src="@/assets/img/social/aparat.png"    alt="" class="social__item social--youtube"></a>
-            <a href="" class="social__link"><img src="@/assets/img/social/aparat.png"    alt="" class="social__item social--aparat"></a>
-            <a href="" class="social__link"><img src="@/assets/img/social/facebook.png"  alt="" class="social__item social--facebook"></a>
+            <a href="" class="social__link"><img src="@/assets/img/social/instagram.png" alt="" class="social__img social--instagram"></a>
+            <a href="" class="social__link"><img src="@/assets/img/social/telegram.png"  alt="" class="social__img social--telegram"></a>
+            <a href="" class="social__link"><img src="@/assets/img/social/twitter.png"   alt="" class="social__img social--twitter"></a>
+            <a href="" class="social__link"><img src="@/assets/img/social/aparat.png"    alt="" class="social__img social--youtube"></a>
+            <a href="" class="social__link"><img src="@/assets/img/social/aparat.png"    alt="" class="social__img social--aparat"></a>
+            <a href="" class="social__link"><img src="@/assets/img/social/facebook.png"  alt="" class="social__img social--facebook"></a>
           </div>
         </div>
-        <div class="footer__about-us">
+        <div class="footer__about-us about-us">
           <h4 class="about-us__title">ارتباط با ما</h4>
-          <p class="">
-           <span class="">تلفن شرکت : </span> 
-           <span class="">0218421844</span>
-          </p>
-          <p class="">
-           <span class="">تلفن شرکت : </span> 
-           <span class="">0218421844</span>
-          </p>
-          <p class="">
-           <span class="">تلفن شرکت : </span> 
-           <span class="">0218421844</span>
-          </p>
-          <p class="">
-           <span class="">تلفن شرکت : </span> 
-           <span class="">0218421844</span>
+          <p class="about-us__item item">
+           <span class="item__title">تلفن شرکت : </span> 
+           <span class="item__content">0218421844</span>
+          </p>          
+          <p class="about-us__item item">
+           <span class="item__title">تلفن شرکت : </span> 
+           <span class="item__content">0218421844</span>
+          </p>          
+          <p class="about-us__item item">
+           <span class="item__title">تلفن شرکت : </span> 
+           <span class="item__content">0218421844</span>
           </p>
         </div>
         <div class="footer__useful-links useful-links">

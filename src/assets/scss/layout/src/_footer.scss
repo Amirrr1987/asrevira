@@ -1,0 +1,233 @@
+.footer {
+    background-color: #0D5591;
+    // height: 347px;
+    @extend .pt-5;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    &__about-us {
+
+    }
+
+    &__container {
+        @extend .container;
+        @extend .pb-5;
+    }
+
+    &__copyright {
+        background-color: darken(#0D5591, 10%);
+        color: lighten(#0D5591, 20%);
+        @extend .pt-3;
+        @extend .pb-3;
+        @extend .text-center;
+        @extend .mb-0;
+    }
+
+    &__row {
+        display: grid;
+        row-gap: em(30px);
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 0;
+
+        }
+    }
+
+    &__social {
+
+    }
+
+    &__useful-links {
+
+    }
+
+
+    .about-us {
+        @extend .text-light;
+        @extend .text-center;
+        &__title {
+            color: lighten(#0D5591, 20%);
+            font-size: em(30px);
+            @extend .pb-3;
+        }
+        .item {
+            font-size: em(19px);
+            &__content {}
+        
+            &__title {}
+        }
+    }
+
+
+    .social {    
+        @extend .text-center;
+    
+        &__title {
+            color: lighten(#0D5591, 20%);
+
+            font-size: em(30px);
+            @extend .pb-3;
+        }
+        &__img {
+            width : 61px;
+            height: 61px;
+        }
+    
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3,61px);
+            gap: 20px;
+            @extend .justify-content-center;
+        }
+    
+        &__link {
+        }
+    
+        &--aparat {}
+    
+        &--facebook {}
+    
+        &--instagram {}
+    
+        &--telegram {}
+    
+        &--twitter {}
+    
+        &--youtube {}
+    }
+    
+    .useful-links {
+        @extend .text-center;
+        &__item {
+            list-style-type: none;
+        }
+    
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: em(20px);
+        }
+    
+        &__link {
+            @extend .text-light;
+            font-size: em(19px);
+        }
+    
+        &__title {
+            color: lighten(#0D5591, 20%);
+            font-size: em(30px);
+            @extend .pb-3;
+        }
+    }
+}
+
+
+// $footer-color: #0D5591;
+
+// .footer {
+//     background-color: $footer-color;
+//     &__about-us {
+//         @extend .col-12;
+//         @include media-breakpoint-up(md) {
+//             @extend .col-md-4;
+//         }
+//     }
+
+//     &__container {
+//          @extend .container;
+//          @extend .pt-5;
+//          @extend .pb-3;
+//     }
+
+//     &__copyright {
+//         @extend .text-center;
+//         @extend .pt-3;
+//         @extend .pb-3;
+//         background-color: darken($color: $footer-color, $amount: 10%);
+//         color: lighten($color: $footer-color, $amount: 20%);
+//     }
+
+//     &__row {
+//         @extend .row;
+//     }
+
+//     &__social {
+//         @extend .col-12;
+//         @include media-breakpoint-up(md) {
+//             @extend .col-md-4;
+//         }
+//     }
+
+//     &__useful-links {
+//         @extend .col-12;
+//         @include media-breakpoint-up(md) {
+//             @extend .col-md-4;
+//         }
+//     }
+
+
+//     .about-us {
+ 
+//         &__title {
+//             color: lighten($color: $footer-color, $amount: 20%);
+ 
+//         }
+//         .item {
+ 
+//             &__content {}
+        
+//             &__title {}
+//         }
+//     }
+
+
+//     .social {    
+    
+//         &__title {
+//             color: lighten($color: $footer-color, $amount: 20%);
+ 
+//         }
+//         &__img {
+//             width: 61px;
+//             width: 61px;
+//         }
+    
+//         &__items {
+ 
+//         }
+    
+//         &__link {
+//         }
+    
+//         &--aparat {}
+    
+//         &--facebook {}
+    
+//         &--instagram {}
+    
+//         &--telegram {}
+    
+//         &--twitter {}
+    
+//         &--youtube {}
+//     }
+    
+//     .useful-links {
+//         &__item {
+ 
+//         }
+    
+//         &__items {
+ 
+//         }
+    
+//         &__link {
+ 
+//         }
+    
+//         &__title {
+//             color: lighten($color: $footer-color, $amount: 20%);
+ 
+//         }
+//     }
+// }
+

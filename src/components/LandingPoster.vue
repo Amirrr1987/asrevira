@@ -2,6 +2,9 @@
   <section class="landing-poster">
     <div class="landing-poster__container">
       <div class="landing-poster__row">
+        <h3 class="landing-poster__head-title">
+          اخبار و اطلاعیه ها
+        </h3>
         <div class="landing-poster__item">
           <img src="@/assets/img/poster/club.png" title="" alt="" class="landing-poster__img"/>
           <div class="landing-poster__body">

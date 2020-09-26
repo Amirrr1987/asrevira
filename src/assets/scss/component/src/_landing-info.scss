@@ -1,4 +1,6 @@
 .landing-info {
+    @extend .pt-5;
+    @extend .pb-5;
     &__caption {
         @extend .text-justify;
         grid-column: 1/3;

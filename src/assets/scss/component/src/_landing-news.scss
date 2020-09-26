@@ -1,0 +1,32 @@
+.landing-news {
+    &__caption {}
+
+    &__container {
+        @extend .container;
+    }
+    &__divider{
+        border-width: 2px;
+        @extend .border-danger;
+        outline: none;
+    }
+
+    &__img {
+        @extend .img-fluid;
+        @extend .rounded;
+        @extend .shadow-sm;
+    }
+
+    &__item {
+        @extend .d-grid;
+        grid-template-columns: 3fr 1fr 3fr;
+        column-gap: em(10px);
+        @extend .align-items-center;
+    }
+
+    &__row {
+        @extend .d-grid;
+        row-gap: em(30px);
+    }
+
+    &__title {}
+}

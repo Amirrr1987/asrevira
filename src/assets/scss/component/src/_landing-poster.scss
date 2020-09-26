@@ -82,4 +82,9 @@
         @extend .text-center;
         
     }
+    &--right{
+        @include media-breakpoint-up(md) {
+            grid-template-areas: 'img body';
+        }
+    }
 }

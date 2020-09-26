@@ -1,8 +1,8 @@
 
 
 .landing-poster {
-    @extend .pt-5;
-    @extend .pb-5;
+    padding-top: 350px;
+    padding-bottom: 350px;
     background-image: url('../img/poster/posterbg.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -14,17 +14,17 @@
         grid-template-rows: min-content 1fr min-content;
         grid-template-areas: 
         'title title date'
-        'zate zate zate'
+        'captions captions captions'
         'null null more';
         @include media-breakpoint-up(md) {
             grid-area: body;
-            @extend .p-md-0;
-            grid-template-columns:em(20px) em(120px) 1fr em(120px) em(20px);
+
+            grid-template-columns:em(120px) 1fr em(120px);
             grid-template-rows: em(50px) 1fr em(45px);
             grid-template-areas: 
-            'ptl title title title ptr'
-            'pcl zate zate zate pcr'
-            'pbl more null date date'
+            'title title title'
+            'captions captions captions'
+            'more null date'
             ;
             &::before{
                 content: "";
@@ -40,7 +40,7 @@
     }
     
     &__caption {
-        grid-area: zate;
+        grid-area: captions;
         @extend .text-justify;
         z-index: 1;
     }
@@ -52,6 +52,29 @@
     &__date {
         grid-area: date;
         z-index: 1;
+        @include media-breakpoint-up(md) {
+            background-color: #282a93;
+            color: #FFF;
+            height: 50px;
+            left: -60px;
+            bottom: -11px;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+            &::before{                
+                content: "";
+                background-color: inherit;
+                position: absolute;
+                width: 50px;
+                height: inherit;
+                transform: skew(-10deg, 0deg);
+                left: -10px;
+                bottom: 0;
+                z-index: -5;
+
+            }
+        }
     }
     
     &__day {}

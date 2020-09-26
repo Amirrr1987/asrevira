@@ -1,0 +1,18 @@
+.landing-services {
+    // @extend .pt-5;
+    // @extend .pb-5;
+    padding-top   : 350px;
+    padding-bottom: 350px;
+    background-image: url(../img/services/services-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    &__container {
+        @extend .container;
+    }
+
+    &__img {
+        // width: 50%;
+    }
+}

@@ -1,4 +1,10 @@
 .landing-news {
+    padding-top   : 350px;
+    padding-bottom: 350px;
+    background-image: url(../img/services/services-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     &__caption {}
 
     &__container {

@@ -10,7 +10,7 @@
         </div>
         <div class="footer__about-us about-us">
           <h4 class="about-us__title">ارتباط با ما</h4>
-          <p class="about-us__item item"  v-for="(contact,index) in contacts" :key="index">
+          <p class="about-us__item item" v-for="(contact,index) in contacts" :key="index">
            <span class="item__title">{{contact.title}} : </span> 
            <span class="item__content">{{contact.content}}</span>
           </p>          
@@ -18,12 +18,12 @@
         <div class="footer__social social">
           <h4 class="social__title">شبکه های اجتماعی</h4>
           <div class="social__items">
-            <a :href="social.imgUrl" class="social__link"  v-for="(social,index) in socials" :key="index"><img :src="social.imgSrc" alt="" class="social__img social--instagram"></a>
+            <a :href="social.imgUrl" class="social__link" v-for="(social,index) in socials" :key="index"><img :src="social.imgSrc" alt="" class="social__img social--instagram"></a>
           </div>
         </div>
       </div>
     </div>
-    <p class="footer__copyright">{{copyright}}</p>
+    <p class="footer__copyright">{{copyright +'@' + copyrightDate}}</p>
   </footer>
 </template>
 
@@ -33,6 +33,8 @@ export default {
    data() {
     return {
       copyright: '© تمامی حقوق برای عصر ویرا محفوظ است',
+      copyrightDate: 2020,
+
       socials:[
         {
           imgUrl: 'instagram.com',

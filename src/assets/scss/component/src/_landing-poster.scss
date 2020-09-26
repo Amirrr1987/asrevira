@@ -9,7 +9,8 @@
     &__body {
         @extend .d-grid;
         @extend .p-3;
-        grid-template-columns: 120px 1fr 120px;
+        @extend .position-relative;
+        grid-template-columns: em(120px) 1fr em(120px);
         grid-template-rows: min-content 1fr min-content;
         grid-template-areas: 
         'title title date'
@@ -17,13 +18,31 @@
         'null null more';
         @include media-breakpoint-up(md) {
             grid-area: body;
-            grid-template-rows: 80px 1fr 45px;
+            @extend .p-md-0;
+            grid-template-columns:em(20px) em(120px) 1fr em(120px) em(20px);
+            grid-template-rows: em(50px) 1fr em(45px);
+            grid-template-areas: 
+            'ptl title title title ptr'
+            'pcl zate zate zate pcr'
+            'pbl more null date date'
+            ;
+            &::before{
+                content: "";
+                background-color: #FFF;
+                position: absolute;
+                left: em(-50px);
+                width: em(150px);
+                height: 100%;
+                transform: skew(-10deg, 0deg);
+                
+            }
         }
     }
     
     &__caption {
         grid-area: zate;
         @extend .text-justify;
+        z-index: 1;
     }
     
     &__container {
@@ -32,6 +51,7 @@
     
     &__date {
         grid-area: date;
+        z-index: 1;
     }
     
     &__day {}
@@ -83,8 +103,15 @@
         
     }
     &--right{
-        @include media-breakpoint-up(md) {
-            grid-template-areas: 'img body';
-        }
+        // @include media-breakpoint-up(md) {
+        //     grid-template-areas: 'img body';
+        //     .landing-poster__body{
+        //         grid-template-areas: 
+        //         'title title title'
+        //         'zate zate zate'
+        //         'date null more'
+        //         ;
+        //     }
+        // }
     }
 }

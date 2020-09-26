@@ -57,6 +57,10 @@
     background-size: 100% em(370px);
     height: em(370px);
     @extend .position-relative;
+        @include media-breakpoint-up(md) {
+            background-size: 100% em(770px);
+            height: em(770px);
+    }
     &__content {
         @extend .pt-4;
         @extend .pr-5;

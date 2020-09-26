@@ -40,15 +40,19 @@
         </div>
       </div>
     </div>
-    <p class="footer__copyright">
-      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
-    </p>
+    <p class="footer__copyright">{{copyright}}</p>
   </footer>
 </template>
 
 <script>
 export default {
   name: 'Footer',
+   data() {
+    return {
+      copyright: '© تمامی حقوق برای عصر ویرا محفوظ است',
+      
+    }
+   }
 }
 </script>
 

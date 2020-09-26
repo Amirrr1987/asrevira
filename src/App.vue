@@ -1,8 +1,9 @@
 <template>
-  <body id="app">
+  <body id="app" class="app">
     <Header/>
     <Main/>
     <Footer/>
+    <a href="#" class=""><img src="@/assets/img/support.svg" title="" alt="" class="support"></a>
   </body>
 </template>
 <script>

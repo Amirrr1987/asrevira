@@ -1,57 +1,35 @@
 .navbar {
-    @extend .nav;
     @extend .navbar-expand-lg;
-    @extend .shadow-sm;
+    @extend .navbar-light;
 
-    &__container{
-        @extend .container-fluid;
+    &__brand {}
+
+    &__collapse {
+        @extend .navbar-collapse;
     }
-    &__icon{
-        @extend .icon;
+
+    &__container {
+        @extend .container;
     }
+
     &__item {
         @extend .nav-item;
     }
 
     &__link {
         @extend .nav-link;
-        @extend .text-secondary;
-        @extend .border;
-        @extend .border-secondary;
-        @extend .mr-1;
-        @extend .ml-1;
-        @extend .rounded;
-        @extend .text-capitalize;
-        @extend .pr-5;
-        @extend .pl-5;
-        @extend .pt-1;
-        @extend .pb-1;
     }
-
-    &__logo-img {
-        height: em(40px);
-    }
-
-    &__logo-link {}
 
     &__nav {
         @extend .navbar-nav;
-    }
-
-    &--left{
         @extend .ml-auto;
     }
-    &--right{
-        @extend .mr-auto;
-        @extend .ml-4;
+
+    &__toggler {
+        @extend .navbar-toggler;
     }
-    &--profile{
-        @extend .icon--smiley;
-    }
-    &--token{
-        @extend .pr-5;
-        @extend .pl-5;
-        @extend .bg-secondary;
-        @extend .text-light;
+
+    &__toggler-icon {
+        @extend .navbar-toggler-icon;
     }
 }

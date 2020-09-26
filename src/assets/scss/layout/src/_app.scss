@@ -1,0 +1,12 @@
+.app{
+
+    .support{
+        width : 70px;
+        height: 70px;
+        position: fixed;
+        display: block;
+        z-index: 999;
+        bottom: em(15px);
+        right : em(15px);
+    }
+}

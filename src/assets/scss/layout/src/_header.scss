@@ -1,0 +1,91 @@
+// .box{
+//     grid-column: 1/2;
+//     grid-row: 3/4;
+// }
+// .header{
+//     $custom-header-bg-height: 460px;
+//     display: grid;
+//     background-image: url('../img/header/header-bg.png');
+//     background-repeat: no-repeat;
+//     background-size: 130% $custom-header-bg-height;
+//     height: $custom-header-bg-height;
+//     grid-template-columns: repeat(2,1fr);
+//     grid-template-rows: 70px 1fr 2fr;
+//     @extend .pr-5;
+//     @include media-breakpoint-up(md) {
+//         $custom-header-bg-height: 960px;
+//         background-size: 100% $custom-header-bg-height;
+//         height: $custom-header-bg-height;
+//     }
+
+//     &__login {
+//         @extend .btn;
+//         background-color: #27CFF8;
+//         @extend .text-light;
+//         border-radius: em(40px);
+//     }
+
+//     &__navbar {
+//         grid-column: 2 span;
+//         @extend .bg-transparent;
+//         @extend .shadow-sm;
+//         box-shadow: 0 0 0 transparent !important;
+//         img{
+//             @extend .d-none;
+//         }
+//     }
+
+//     &__solotion {
+//         font-size: em(15px);
+//     }
+
+//     &__title {}
+
+//     &__flag{
+//         @extend .img-fluid;
+//         width: 100%;    
+//         grid-column: 2/3;
+//         grid-row: 2/4;
+//     }
+// }
+
+
+.header {
+    background-image: url('../img/header/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% em(370px);
+    height: em(370px);
+    @extend .position-relative;
+    &__content {
+        @extend .pt-4;
+        @extend .pr-5;
+        @extend .mt-5;
+    }
+
+    &__flag {
+        width: em(300px);
+        @extend .position-absolute;
+        top: em(40px);
+        left: 0;
+    }
+
+    &__login {
+        @extend .btn;
+        @extend .text-light;
+        background-color: #27CFF8;
+        border-radius: em(40px);
+
+    }
+
+    &__navbar {}
+
+    &__slogan {
+        font-size: em(15px);
+        @extend .pb-3;
+    }
+
+    &__title {
+        @extend .pb-1;
+    }
+}

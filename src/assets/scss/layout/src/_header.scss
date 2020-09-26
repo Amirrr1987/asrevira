@@ -56,19 +56,20 @@
     background-position: center top;
     background-size: 100% em(370px);
     height: em(370px);
+    width: 100%;
     @extend .position-relative;
         @include media-breakpoint-up(md) {
             background-size: 100% em(770px);
             height: em(770px);
     }
     &__content {
-        @extend .pt-4;
+        @extend .pt-5;
         @extend .pr-5;
         @extend .mt-5;
     }
 
     &__flag {
-        width: em(300px);
+        width : em(240px);
         @extend .position-absolute;
         top: em(40px);
         left: 0;

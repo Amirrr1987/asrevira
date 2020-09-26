@@ -126,15 +126,84 @@
         
     }
     &--right{
-        // @include media-breakpoint-up(md) {
-        //     grid-template-areas: 'img body';
-        //     .landing-poster__body{
-        //         grid-template-areas: 
-        //         'title title title'
-        //         'zate zate zate'
-        //         'date null more'
-        //         ;
-        //     }
-        // }
+        @include media-breakpoint-up(md) {
+            grid-template-areas: 'img body';
+            .landing-poster__body{
+                grid-template-areas: 
+                'title title title'
+                'captions captions captions'
+                'date null more'
+                ;
+                &::before{
+                    content: "";
+                    background-color: #FFF;
+                    position: absolute;
+                    right: em(-40px);
+                    width: em(150px);
+                    height: 100%;
+                    transform: skew(-10deg, 0deg);
+                    
+                }
+            }
+            .landing-poster__date{
+                @include media-breakpoint-up(md) {
+                    background-color: #282a93;
+                    color: #FFF;
+                    height: 50px;
+                    right: -11px;
+                    bottom: -11px;
+                    width: 150px;
+                    line-height: 50px;
+                    text-align: center;
+                    position: relative;
+                    &::before{                
+                        content: "";
+                        background-color: inherit;
+                        position: absolute;
+                        width: 50px;
+                        height: inherit;
+                        transform: skew(-10deg, 0deg);
+                        right: -10px;
+                        bottom: 0;
+                        z-index: -5;
+            
+                    }
+               }
+            }
+
+
+        }
     }
 }
+
+
+/*
+&__date {
+    grid-area: date;
+    z-index: 1;
+    @include media-breakpoint-up(md) {
+        background-color: #282a93;
+        color: #FFF;
+        height: 50px;
+        left: -60px;
+        bottom: -11px;
+        width: 150px;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        &::before{                
+            content: "";
+            background-color: inherit;
+            position: absolute;
+            width: 50px;
+            height: inherit;
+            transform: skew(-10deg, 0deg);
+            left: -10px;
+            bottom: 0;
+            z-index: -5;
+
+        }
+    }
+}
+
+*/

@@ -1,25 +1,38 @@
 .landing-news {
-    padding-top   : 350px;
+    padding-top: 350px;
     padding-bottom: 350px;
     background-image: url(../img/services/services-bg.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    &__caption {}
+
+    &__caption {
+        animation-name: amir-text;
+        animation-duration: 10s;
+    }
 
     &__container {
         @extend .container;
     }
-    &__divider{
-        border-width: 2px;
+
+    &__divider {
+        border-width: 4px;
         @extend .border-danger;
         outline: none;
+        width: 100%;
+        animation-name: amir;
+        animation-duration: 2s;
     }
 
     &__img {
         @extend .img-fluid;
-        @extend .rounded;
-        @extend .shadow-sm;
+        border-radius: em(15px);
+        @extend .shadow;
+
+        @include media-breakpoint-up(md) {
+            height: 200px;
+            width: 100%;
+        }
     }
 
     &__item {
@@ -35,4 +48,23 @@
     }
 
     &__title {}
+}
+
+@keyframes amir {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+@keyframes amir-text {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
